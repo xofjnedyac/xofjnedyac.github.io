@@ -16,6 +16,11 @@
         padding-bottom: 2%;
     }
 
+    main figure img {
+        height: 300px; 
+        object-fit: cover;
+    }
+
     div.news {
         clear: both; 
         column-count: 2;
