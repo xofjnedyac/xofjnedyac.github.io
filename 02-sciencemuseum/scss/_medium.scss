@@ -1,0 +1,54 @@
+//header
+
+header {
+
+    #logoImage {
+        width: 9rem;
+        height: auto;
+    }
+
+    h1{ font-size: 2rem;
+    margin-bottom: .5rem;}
+    h2 {display: block;}
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+
+nav {
+
+    margin-bottom: 0;
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul li {width: 100%;
+    text-align: center;}
+
+    ul li a {
+        border: none;
+    }
+} //end nav
+
+//main
+
+main {
+    .hero {
+        margin-bottom: 1rem;
+        
+    }
+
+    .bodyImage {width: 48%;
+        margin: 1vw;
+        float: right;}
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+//footer
+
+#footerWrapper {
+    clear: both;
+}
