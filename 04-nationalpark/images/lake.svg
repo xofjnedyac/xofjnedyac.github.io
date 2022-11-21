@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 644.49 593.28" style="enable-background:new 0 0 644.49 593.28;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:22;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:13;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{stroke:#000000;stroke-width:13;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1">
+	<path class="st0" d="M90.09,244.09c-20.62-57.74,62.81-78.13,90.38-82.72c27.57-4.6,73.53-58.21,105.7-33.7
+		s81.6,51.65,102.64,47.49c71.43-14.11,58.77,42.77,105.7,53.62c57.21,13.22,131.74,41.36,131.74,91.91s-57.09,84.03-45.96,116.43
+		c16.85,49.02-45.96,82.72-79.66,78.13c-33.7-4.6-140.94,3.06-162.38,45.96s-111.37,8.46-117.96,0
+		c-21.45-27.57-42.89-82.72-94.98-81.19S-8.04,411.41,15.03,378.75C44.13,337.54,105.41,286.98,90.09,244.09z"/>
+</g>
+<g id="Layer_2">
+	<polygon class="st1" points="451.94,74.19 474.61,74.19 451.38,40.35 465.46,40.35 437.07,7.22 408.68,40.35 422.76,40.35 
+		399.53,74.19 422.2,74.19 391.63,109.19 437.07,109.19 482.52,109.19 	"/>
+	<rect x="428.65" y="109.19" class="st2" width="16.85" height="25.38"/>
+	<g>
+		<polygon class="st1" points="588.68,114.5 625.24,114.5 587.77,59.92 610.48,59.92 564.69,6.5 518.9,59.92 541.62,59.92 
+			504.14,114.5 540.71,114.5 491.4,170.95 564.69,170.95 637.99,170.95 		"/>
+		<rect x="551.11" y="170.95" class="st2" width="27.17" height="40.93"/>
+	</g>
+	<line class="st3" x1="144.73" y1="238.47" x2="216.22" y2="238.47"/>
+	<line class="st3" x1="502.43" y1="330.64" x2="538.18" y2="330.64"/>
+	<line class="st3" x1="179.74" y1="330.64" x2="457.52" y2="330.64"/>
+	<line class="st3" x1="266.26" y1="238.47" x2="410.26" y2="238.47"/>
+	<line class="st3" x1="205.5" y1="418.43" x2="514.43" y2="420.99"/>
+</g>
+</svg>

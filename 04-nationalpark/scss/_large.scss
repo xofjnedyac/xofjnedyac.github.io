@@ -1,0 +1,75 @@
+header, nav, main, footer {
+        max-width: 60rem; 
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+div#headerWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 400px; 
+        background-image: url(../images/header-large.jpg);
+        background-size: cover;
+        background-position: center bottom; 
+       
+    }
+
+    header {
+        height: 400px;
+        background: none;
+    }
+
+    #mobileTabletHeader {
+        display: none;
+    }
+
+   #desktopHeader {
+        display: block;
+        margin: 0;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.69);
+        padding: .7rem 2%;
+        font-size: 2.4rem;
+   }
+
+
+/*----------- NAVIGATION --------------*/
+#navWrapper {
+        background-color: #a3081f;
+        width: 100%;
+}
+
+nav {flex-direction: row;}
+
+    nav ul, nav ul.open {
+    display: flex;
+    flex-direction: row;
+    align-items: center;}
+
+    nav ul li {width: auto;
+    height: 44px;}
+
+    nav ul li a{padding: .5rem 1rem;}
+
+nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+/*----------- MAIN --------------*/
+
+.card {
+        flex-basis: 32%;
+    }
+    
+
+/*----------- FOOTER --------------*/
+    #footerWrapper {
+        background-color: #ddd;
+    }
