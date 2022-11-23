@@ -69,6 +69,22 @@ nav {
     color: #000;
 }
 
+button span:nth-child(1) {
+    display: block;
+}
+
+button span:nth-child(2) {
+    display: none;
+}
+
+button.open span:nth-child(1) {
+    display: none;
+}
+
+button.open span:nth-child(2) {
+    display: block;
+}
+
 nav ul {
     display: none;
     list-style-type: none;
