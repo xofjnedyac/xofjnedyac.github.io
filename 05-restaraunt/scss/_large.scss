@@ -1,0 +1,71 @@
+header, nav, main, footer {
+        max-width: 75rem; 
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+   
+
+/*----------- NAVIGATION --------------*/
+
+#hamBone {
+    display: none;
+}
+
+// #navWrapper {
+//     background-color: #a3081f;
+//     width: 100%;
+// }
+
+nav {flex-direction: row;}
+
+nav ul, nav ul.open {
+display: flex;
+flex-direction: row;
+align-items: center;}
+
+nav ul li {width: auto;
+height: 44px;}
+
+nav ul li a{padding: .5rem 1rem;}
+
+nav {
+    
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+/*----------- MAIN --------------*/
+
+main {
+    padding: 0;
+}
+
+.heroContainer picture {
+    width: 75rem;
+    margin: 0 auto;
+}
+#founderImage {
+    float: right; 
+    max-width: 38rem;
+}
+
+#founderImage img{
+    max-width: 38rem;
+}
+
+    
+
+/*----------- FOOTER --------------*/
+    #footerWrapper {
+
+    }

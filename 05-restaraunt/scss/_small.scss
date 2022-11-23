@@ -1,0 +1,170 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+
+/*----------- HEADER --------------*/
+div#headerWrapper {
+   
+}
+
+header {
+    padding: 1rem 2%;
+    background-color: #1d3557;
+    color: #FFF;
+}
+
+header h1 {
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+header h2 {
+    margin-top: 2px;
+}
+
+.logo {
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #457b9d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#hamBone {
+    border-radius: 0;
+    border: none;
+    height: 44px;
+    background-color: #457b9d;
+    color: #FFF;
+}
+
+#hamBone:hover {
+    background-color: #a8dadc;
+    color: #000;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+nav ul.open {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: #dedede;
+    padding: .9rem 2vw;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li:hover {
+    background-color: #a8dadc;
+    color: #000;
+}
+
+nav ul li:hover a {
+    color: #000;
+}
+
+nav ul li.active{
+    background-color: #a8dadc;
+}
+
+nav ul li.active a {
+    color: #000;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+main h2 {
+    font-weight: 700;
+}
+
+.heroContainer picture {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.heroContainer img {
+    width: 100%;
+}
+
+main figure {
+    margin: 6px 0px 12px 6px;
+}
+
+
+#founderImage {
+    float: right; 
+    max-width: 30rem;
+}
+
+#founderImage img{
+    max-width: 30rem;
+}
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #1d3557;
+    padding: .5rem 2%;
+    text-align: center;
+    color: #FFF;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
