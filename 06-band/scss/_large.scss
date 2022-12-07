@@ -1,0 +1,45 @@
+header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+#logo {
+        padding-left: .8rem;
+        padding-right: .8rem;
+}
+
+
+/*----------- NAVIGATION --------------*/
+
+#hamBone {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #mobileNav {
+        display: none;
+    }
+/*----------- MAIN --------------*/
+main {
+        padding-left: .8rem;
+        padding-right: .8rem;
+}
+
+.memberCard {
+        flex-basis: 23%;
+       }
+
+
+/*----------- FOOTER --------------*/
+    

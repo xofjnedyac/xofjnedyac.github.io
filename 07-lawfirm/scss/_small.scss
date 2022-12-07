@@ -1,0 +1,296 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+// Columns
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@for $i from 0 through 12 {
+    $w:($i/12)*100%;
+    .small-#{$i} {flex-basis: $w;}
+}
+
+.column {
+    padding: .3rem $gutter;
+}
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;  
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+a {
+    text-decoration: none;
+    border: none;
+}
+
+
+/* HEADER  */
+
+#headerWrapper {
+    border-top: solid 10px #445258;
+    background-color: #2A3F4C;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding: .5rem 2vw;
+	h1 {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        padding-left: .5rem;
+        color: #FFF;
+    }
+} 
+
+#logoDiv {
+    display: flex;
+    align-items: center;
+}
+
+#numberDiv a{
+    color: #FFF;
+}
+
+
+
+// end header
+
+// NAV
+/* NAVIGATION STUFF GOES HERE  */
+#mediumNav {display: none;}
+
+#smallNavBtn {
+    background-color: #8A9AA6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .4rem 3vw .4rem 0 ;
+    font-size: 26px;
+}
+#smallNavBtn a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#smallNavBtn a:hover {
+    color: #442458;
+}
+
+#mobileNav {
+    height: 100vh;
+    background-color: #9b9b9b;
+}
+
+#closeBtn {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 26px;
+    padding: .4rem 3vw .4rem 0 ;
+    background-color: #1b1b1b;
+    
+}
+
+#closeBtn a {
+    text-decoration: none;
+    
+}
+
+#mobileNav ul {
+    list-style-type: none;
+}
+
+#mobileNav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem;
+    border-top: 1px solid $primaryColor;
+    border-bottom: 1px solid $primaryColor;
+    height: 48px;
+}
+
+#mobileNav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block; 
+    
+}
+
+#mobileNav ul li.active {
+    background-color: $primaryColor;
+}
+
+li.active {
+    background-color: #445258;
+}
+
+
+/* MAIN  */
+
+
+#mainWrapper {
+
+    background-color: rgb(235, 235, 235);
+}
+main {
+ 	p {padding: .5rem 2vw; color: #333; line-height: 125%;}
+	h1 {
+        padding: 1rem 2vw .5rem 2vw; 
+        font-size: 1.5rem; 
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    .hero {width: 100%;}
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    #lawyerCards, #buttons, #blog, #tipFAQ {
+        margin-top: 1.5rem;
+    }
+    
+.lawyerCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.lawyerCard h3 {
+    padding: 1rem 0;
+}
+
+.lawyerCard img {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+.learnMore {
+    display: block;
+    height: 32px;
+    border: none;
+    background-color: $primaryColor;
+    margin: .3rem 0rem;
+    padding: 0 2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.learnMore:hover {
+    background-color: $secondaryColor;
+    text-decoration: none;
+}
+
+
+
+.largeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $primaryColor;
+    color: white;
+    margin: .2rem 0;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.largeBtn:hover {
+    background-color: $secondaryColor;
+}
+
+
+.blogCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.blogCard img {
+    width: 100%;
+    height: auto;
+}
+
+.blogCard a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #8A9AA6;
+    color: #FFF;
+    text-decoration: none;
+    height: 30px;
+}
+
+.blogCard a:hover {
+    color: #2A3F4C;
+}
+
+.blogCard h3, .faq h3 {
+    margin-top: .5rem;
+    font-size: 18px;
+}
+
+#tipFAQ {
+    display: none;
+}
+
+.faq {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .5rem;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+} // end main
+
+
+
+/* FOOTER  */
+#footerWrapper {background-color: #1b1b1b; }
+footer {
+    font-size: .85rem;
+	padding: 1rem 0 0 0;
+	color: #bbb;
+	text-align: center;
+	a{color: #eee;}
+    margin-top: 2rem;
+}
+
+footer a.fa-brands {
+    font-size: 3rem;
+    padding: 10px;
+}

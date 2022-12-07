@@ -1,0 +1,18 @@
+header, nav, main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+
+
+// Columns
+@for $i from 0 through 12 {
+    $w:($i/12)*100%;
+    .large-#{$i} {flex-basis: $w;}
+}
+
+
+#tipFAQ {
+    display: flex !important;
+}

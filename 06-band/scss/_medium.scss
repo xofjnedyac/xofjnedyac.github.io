@@ -1,0 +1,34 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+    nav ul {margin-left: 2%;}
+    nav ul li {width: auto;}
+    nav ul li a{padding: .5rem 1rem;}
+
+   
+
+
+/*----------- MAIN --------------*/
+
+.memberContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+   }
+
+   .memberCard {
+    flex-basis: 48%;
+   }
+
+/*----------- FOOTER --------------*/
+    

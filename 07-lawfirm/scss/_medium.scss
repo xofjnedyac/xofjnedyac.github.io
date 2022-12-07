@@ -1,0 +1,45 @@
+/* NAVIGATION STUFF GOES HERE  */
+
+// Columns 
+@for $i from 0 through 12 {
+    $w:($i/12)*100%;
+    .medium-#{$i} {flex-basis: $w;}
+}
+
+#smallNavBtn {
+    display: none;
+}
+
+#mediumNav {
+    display: flex;
+    flex-direction: row;
+}
+
+#mediumNav ul {
+    background-color: #8A9AA6;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#mediumNav ul li {
+    display: flex;
+    height: 36px;
+    align-items: center;
+    padding: 10px;
+}
+
+#mediumNav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px; 
+}
+
+#mediumNav ul li:hover {
+    background-color: #F2CA9A;
+}
+
+#mediumNav ul li:hover a {
+    color: #000;
+}
