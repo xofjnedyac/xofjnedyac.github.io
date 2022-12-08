@@ -1,1 +1,74 @@
 /* NAVIGATION STUFF GOES HERE  */
+#hamBone {
+    display: none;
+}
+
+#smallNav {
+    display: none;
+}
+
+#navWrapper #mediumNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 2vw;
+}
+
+#navWrapper #mediumNav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#navWrapper #mediumNav li:nth-child(1) a {
+    
+}
+
+#navWrapper #mediumNav li:hover {
+    background-color: $secondaryColor;
+}
+
+#navWrapper #mediumNav li.active {
+    background-color: $secondaryColor;
+}
+
+#navWrapper #mediumNav li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #FFF;
+}
+
+// main
+
+
+
+#galleryContainer {
+    max-width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+}
+
+#galleryContainer div:nth-child(1) {
+    grid-column: 1 / span 3;
+}
+
+
+
+
+// footer
+
+#footerContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    // padding-left: 25vw;
+}
+
+#footerContainer ul {
+    display: block;
+    justify-self: left;
+    list-style-type: none;
+    
+}

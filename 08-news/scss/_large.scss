@@ -4,3 +4,27 @@ header, nav, main {
 }
 
 /* NAVIGATION STUFF GOES HERE  */
+
+
+
+// main
+
+#galleryContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+#galleryContainer div:nth-child(1) {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+}
+
+// footer
+
+#footerContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#footerContainer ul {
+    justify-self: center;
+}
