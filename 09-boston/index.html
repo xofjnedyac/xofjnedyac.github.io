@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>09-Boston</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
+   
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+    <img src="./images/headerbg.jpg" alt="header image" id="headerBg">
+	<header>
+		<h1>City of Chicago</h1>
+        <h2>When You Go You Know</h2>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav>
+        <button id="hamBone"> &#9776;</button>
+        <ul id="primaryNav">
+        <li><a href="#">Visit</a>
+        <li class="parent"><a href="#">Departments</a>
+            <ul>
+                <li><a href="#">Land Fill</a></li>
+                <li><a href="#">Police</a></li>
+                <li><a href="#">Parks and Rec</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pay Bills</a></li>
+        <li><a href="#">Meetings</a></li>
+        <li><a href="#">Help</a></li>
+    </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+
+  
+       <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="./images/city1small.jpg" media="(max-width: 35rem)">
+            <source srcset="./images/city1large.jpg" media="(min-width: 35rem)">
+            <img src="./images/city1large.jpg" alt="slide 1">
+            <p>Image caption 1</p>
+        </picture>
+        </div>
+      <div class="swiper-slide"><picture>
+        <source srcset="./images/city2small.jpg" media="(max-width: 35rem)">
+        <source srcset="./images/city2large.jpg" media="(min-width: 35rem)">
+        <img src="./images/city2large.jpg" alt="slide 2">
+        <p>Image caption 2</p>
+    </picture></div>
+      <div class="swiper-slide"><picture>
+        <source srcset="./images/city3small.jpg" media="(max-width: 35rem)">
+        <source srcset="./images/city3large.jpg" media="(min-width: 35rem)">
+        <img src="./images/city3large.jpg" alt="slide 3">
+        <p>Image caption 3</p>
+    </picture></div>
+    
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    
+  </div>
+
+  <h1>Plan Your Visit</h1>
+
+  <div class="cardContainer">
+    <div>
+        <a href="#">
+            <img src="./images/location-dot-solid.svg" alt="card 1">
+            <h3>Destinations</h3>
+        </a>
+    </div>
+    <div>
+        <a href="#">
+            <img src="./images/plane-departure-solid.svg" alt="card 2">
+            <h3>Travel</h3>
+        </a>
+    </div>
+    <div>
+        <a href="#">
+            <img src="./images/face-grin-wide-solid.svg" alt="card 3">
+            <h3>Attractions</h3>
+        </a>
+    </div>
+    <div>
+        <a href="#">
+            <img src="./images/calendar-solid.svg" alt="card 4">
+            <h3>Events</h3>
+        </a>
+    </div>
+
+  </div>
+
+    </main>
+</div> <!-- //end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>2022 &bull; Cayden Fox &bull; Login</p>
+    </footer>
+</div> <!-- end footer wrapper -->
+  
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html> 

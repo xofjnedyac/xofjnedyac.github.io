@@ -1,0 +1,83 @@
+/* NAVIGATION STUFF GOES HERE  */
+
+#hamBone {
+    display: none;
+}
+
+nav {
+    background: none;
+}
+
+nav ul {
+    display: flex;
+    margin-left: 2%;
+    border-left: 1px solid rgba(0, 0 ,0, 0.1)
+}
+
+nav ul li {
+    border-right: 1px solid rgba(0, 0 ,0, 0.1)
+}
+
+nav ul li a {
+    display: block;
+    font-size: 1rem;
+    padding: .9rem 1.2rem;
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+    transition: background 0.3s linear;
+    font-size: .88rem;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#primaryNav li.parent > a:after {
+    content: "\25BC";
+    font-size: .65rem;
+    color: rgba(255, 255, 255, 0.5);
+    float: left;
+}
+
+
+nav ul li ul {
+    flex-direction: column;
+    background-color: darken($menuColor, 5%);
+    border: none;
+    width: 14rem;
+    position: absolute;
+    left: -99rem;
+}
+
+nav ul li:hover ul {
+    left: auto;
+    margin-left: 0;
+    z-index: 999;
+}
+
+nav ul li ul li {
+    border-right: none;
+    border-top: solid 1px rgba(0, 0 ,0, 0.2);
+}
+
+li.active a {
+    background-color: rgba(0, 0 ,0, 0.25);
+}
+
+
+//main
+
+.cardContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardContainer div {
+    flex-basis: 46%;
+    margin: 10px;
+  }
+
+.cardContainer div a {
+    background-color: red;
+}

@@ -1,0 +1,33 @@
+header, nav, main {
+    max-width: 1024px;
+    margin: auto;
+}
+
+header {
+    text-align: left;
+}
+/* NAVIGATION STUFF GOES HERE  */
+
+nav ul li a {
+    font-size: .9rem;
+    padding: .5rem 1.2rem;
+}
+
+
+//main
+
+.cardContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardContainer div {
+    flex-basis: 23%;
+    margin: 10px;
+  }
+
+    .cardContainer div a {
+        background-color: green;
+        height: 235px;
+    }

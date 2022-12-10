@@ -1,0 +1,202 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+
+/* HEADER  */
+#headerWrapper {
+    position: relative;
+}
+
+#headerBg {
+    position: absolute;
+    height: 102px;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(40%);
+}
+
+header {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+	padding: .5rem 2vw;
+	h1 {
+        font-size: 2.4rem;
+        font-weight: $lightWeight;
+        padding: .6rem;
+        color: #FFF;
+       
+    }
+    h2 {
+        font-size: 1.2rem;
+        font-weight: $lightWeight;
+        padding-left: .6rem;
+        padding-bottom: .6rem;
+        color: $primaryColor;
+    }
+} // end header
+
+/* NAVIGATION STUFF GOES HERE  */
+
+
+
+#navWrapper {
+    background-color: $menuColor;
+    background: $menuGradient;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN  */
+main {
+ 	p {padding: .5rem 2vw; color: #333; line-height: 125%;}
+	h1 {
+        padding: 1rem 2vw .5rem 2vw; 
+        font-size: 2rem; 
+        color: #000;
+        font-weight: $lightWeight
+    }
+    .hero {width: 100%;}
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+} 
+
+
+.swiper-wrapper {
+    
+    margin-bottom: 25px;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper img {
+    width: 100%;
+    display: block;
+  }
+
+  .swiper p {
+    margin: 0;
+    padding: .4rem 2vw;
+    position: absolute;
+    transform: translateY(-100%);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #FFF;
+    width: 100%;
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardContainer div {
+    flex-basis: 100%;
+    margin: 10px 0 10px 0;
+  }
+
+
+  .cardContainer div:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/card4.jpg');
+    background-size: cover;
+  }
+  .cardContainer div:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/card1.jpg');
+    background-size: cover;
+  }
+  .cardContainer div:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/card3.jpg');
+    background-size: cover;
+  }
+  .cardContainer div:nth-child(4) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/card2.jpg');
+    background-size: cover;
+  }
+
+  .cardContainer div:nth-child(1) a {
+    background-color: #32292F;
+  }
+
+  .cardContainer div:nth-child(2) a {
+    background-color: #FE9920;
+  }
+
+  .cardContainer div:nth-child(3) a {
+    background-color: #0C4767;
+  }
+
+  .cardContainer div:nth-child(4) a {
+    background-color: #76949F;
+  }
+
+  .cardContainer div a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 2%;
+    transition: all .25s ease-in;
+  }
+
+  .cardContainer div a:hover {
+    background: none;
+    text-shadow: 0 0 4px black;
+  }
+
+  .cardContainer div a img {
+    fill: #FFF;
+    height: 75px;
+    margin-bottom: 20px;
+  }
+
+  .cardContainer div a h3 {
+    color: #FFF;
+  }
+// end main
+
+
+
+/* FOOTER  */
+#footerWrapper {background-color: #1b1b1b; }
+footer {
+    font-size: .85rem;
+	padding: 1rem 0;
+	color: #bbb;
+	text-align: center;
+	a{color: #eee;}
+}
