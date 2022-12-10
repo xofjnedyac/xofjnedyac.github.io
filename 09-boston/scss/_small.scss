@@ -20,7 +20,7 @@ body {
 
 #headerBg {
     position: absolute;
-    height: 102px;
+    height: 125px;
     width: 100%;
     object-fit: cover;
     z-index: 1;
@@ -55,6 +55,13 @@ header {
 #navWrapper {
     background-color: $menuColor;
     background: $menuGradient;
+    position: relative;
+    z-index: 2;
+}
+
+nav {
+    position: relative;
+    z-index: 2;
 }
 
 
