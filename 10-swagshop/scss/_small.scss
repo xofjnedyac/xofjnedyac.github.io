@@ -1,0 +1,218 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+header, nav, main, footer {
+    font-family: 'Work Sans', sans-serif;
+}
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+.moveOver>.content {
+    transform: translateX(-180px);
+}
+
+.content {
+    transition: transform .5s ease;
+}
+
+.content {
+    background-color:  rgb(42, 42, 42);
+}
+
+#pageWrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    display: grid;
+    grid-template-columns: 51px auto 48px;
+    align-items: center;
+    padding: .5rem 2%;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    img {width: 75px;
+    height: auto;}
+    
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+header button {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    align-self: start;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    text-align: right;
+    color: rgb(242, 242, 242);
+}
+
+/*----------- NAVIGATION --------------*/
+
+
+nav {
+    background-image: linear-gradient(to right top, #91c499, #7dc1a4, #6cbdae, #61b7b8, #5eb1bf);
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%);
+
+    div {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        background: none;
+        color: #fff;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    ul li a {
+        display: block;
+        padding: .9rem .5rem;
+        text-align: right;
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    ul li a:hover {
+        background-color: $secondaryColor;
+        color: #eee;
+    }
+
+    li.active a {color: #FFC759;}
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    background-color:  rgb(42, 42, 42);
+    color: rgb(242, 242, 242);
+}
+
+
+/// form
+
+form {
+    background-color: rgb(42, 42, 42);
+    padding: 0 3% 0 3%;
+}
+ 
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #959595;
+    border-radius: 10px;
+    padding: 1rem 7%;
+    background-color:  rgb(42, 42, 42);
+    // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
+}
+
+form legend {
+    color: rgb(242, 242, 242);
+    float: left;
+    width: 100%;
+    padding: 0 0 1rem 0 ;
+
+}
+
+form label.top, form div {
+    display: block; 
+    padding-top: 1rem;
+    color: rgb(242, 242, 242);
+    font-size: .8rem;
+}
+
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #959595;
+    border-radius: 30px;
+    padding: .75rem;
+    color: rgb(242, 242, 242);
+    width: 100%;
+    max-width: 20rem;
+    background-color:  rgb(42, 42, 42);
+    margin-top: .2rem;
+}
+
+::placeholder {
+    font-weight: 200;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0; 
+    color: rgb(242, 242, 242);
+}
+
+
+form input.submitBtn {
+    display: block;
+    border: none;
+    background-image: linear-gradient(to right top, #91c499, #7dc1a4, #6cbdae, #61b7b8, #5eb1bf);
+    color: white;
+    border-radius: 30px;
+    padding: .75rem 1.5rem;
+    margin: 0 7% 2rem 7%;
+    width: 100%;
+    max-width: 20rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-transform: uppercase;
+    
+}
+
+
+form label.top input:required {
+   
+    border: 1px solid #c35757;
+}
+
+form label.top input:required:valid {
+    border: 1px solid #85c385;
+}
+
+form label.top input {
+    transition: border .5s ease;
+}
+
+
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-image: linear-gradient(to right bottom, #ffc759, #fcb049, #f7983e, #f27f37, #eb6534);
+    padding: .5rem 2%;
+    text-align: center;
+    color: #FFF;
+}   
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
