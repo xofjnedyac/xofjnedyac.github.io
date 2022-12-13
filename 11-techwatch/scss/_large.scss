@@ -1,0 +1,53 @@
+header, nav, main, footer,div#hamburger {
+       
+}
+
+#pageWrapper {
+        grid-template-areas: 
+        "header"
+        "navigation"
+        "content"
+        "footer"
+       ;
+       grid-template-columns: auto;
+//        max-width: 64rem;
+       margin:auto;
+    }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header {
+max-width: 60rem;
+margin: 0 auto;}
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+        max-width: 60rem;
+        margin: 0 auto;}
+
+nav ul li {flex-basis: auto;
+        a {padding: .6rem 1rem;}
+}
+
+
+/*----------- MAIN --------------*/
+main {
+        max-width: 60rem;
+        margin: 0 auto;}
+
+.row1 {
+        grid-template-columns: 600px auto;
+}
+
+.row2 {
+        grid-template-columns: auto 600px;
+}
+/*----------- FOOTER --------------*/
+    
+footer {
+        max-width: 60rem;
+        margin: 0 auto;}
