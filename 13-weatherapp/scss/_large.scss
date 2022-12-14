@@ -1,0 +1,28 @@
+header, nav, main, footer {
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+
+#weatherForecast {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#weatherForecast div {
+    flex-basis: 18%;
+}
+
+
+/*----------- FOOTER --------------*/
+    

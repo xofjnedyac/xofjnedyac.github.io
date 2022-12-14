@@ -1,0 +1,107 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    background-image: linear-gradient(to left top, #ffb88e, #faa27a, #f68b6a, #f0725d, #ea5753);
+    color: #FFF;
+    height: 100vh;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .7rem 2%;
+    color: #FFF;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 0;
+}
+
+header h2 {
+    margin-top: .3rem;;
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+#weatherForecast {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    width: 100%;
+}
+
+#weatherForecast div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #91c3cc;
+    margin: .5rem 0 .5rem 0;
+    padding: .5rem .5rem -1rem .5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 100%;
+}
+
+
+#weatherForecast div span {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1rem;
+    padding-top: .7rem;
+
+}
+
+#weatherForecast div p {
+    font-size: 4rem;
+    margin: .4rem 0 0rem 0
+}
+
+#weatherForecast div img {
+    width: 100px;
+    height: auto;
+    margin-top: -1rem;
+    padding: 0;
+    
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
