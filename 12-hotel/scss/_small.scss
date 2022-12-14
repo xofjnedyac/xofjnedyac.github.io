@@ -1,0 +1,190 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .7rem 2%;
+    background-color: $primaryColor;
+    color: #FFF;
+    border-bottom: 1px solid #48668e;
+}
+header h1 {
+    margin: 0; 
+    font-size: 18px;
+    font-weight: 200;
+}
+
+#belowHeader {
+    padding: .4rem 2%;
+    background-color: #023E8A;
+    color: #FFF;
+    font-weight: 200;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;   
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li {
+    background-color: $primaryColor;
+    flex-basis: 33.3%;
+    display: block;
+    padding: .6rem 0 .7rem 0;
+
+    
+}
+
+nav ul li:hover {
+    background-color: #40cde9;
+}
+
+nav ul li:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav ul li.active {
+    background-color: #0093b1;
+}
+
+nav ul li.active:hover {
+    background-color: #40cde9;
+}
+
+nav ul li a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a .icon {
+    font-size: 26px;
+}
+
+
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+#cardContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+#cardContainer .hotelCard:last-child {
+
+    margin-bottom: 5.2rem;
+
+}
+
+.hotelCard {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem 0;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.hotelCard figure {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.hotelCard figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.hotelCard figure figcaption {
+    position: absolute;
+    bottom: 2px;
+    background-color: rgba(255, 255, 255, 0.755);
+    width: 100%;
+    color: rgb(0, 0, 0);
+    padding: .2rem 0 .4rem 2%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.104);
+}
+
+.hotelCard .cardBottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    width: 100%;
+}
+
+.cardBottom span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    margin: .4rem 0 .4rem 0;
+}
+.cardBottom span i {
+    float: left;
+    font-size: 1.5rem;
+}
+
+.cardBottom span p {
+    padding-left: .7rem;
+    margin: .2rem 0 .2rem 0;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
