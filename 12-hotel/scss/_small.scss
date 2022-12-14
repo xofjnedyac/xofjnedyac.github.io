@@ -150,8 +150,12 @@ main {
 .hotelCard .cardBottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1;
+    grid-template-rows: 1fr;
     width: 100%;
+}
+
+.cardBottom {
+    padding: 0 2% 0 2%;
 }
 
 .cardBottom span {
