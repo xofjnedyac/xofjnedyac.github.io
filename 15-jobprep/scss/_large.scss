@@ -1,4 +1,4 @@
-header, nav, main, footer {
+header, nav, div.   main, footer {
     max-width: 1200px;
     margin: auto;
 }
@@ -28,7 +28,7 @@ header, nav, main, footer {
     padding-right: .4rem;
 }
 
-main {
+div.main {
 
     #features {
         grid-template-columns: 1fr 1fr 1fr;
