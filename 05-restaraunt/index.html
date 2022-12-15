@@ -70,10 +70,16 @@
     <main class="clearfix">
        
        <h2>Our Founder</h2>
-       <figure id="founderImage">
-        <img  src="./images/founderimage-assets/founder600.jpg" alt="founder image" sizes="50vw" 
-            srcset="./images/founderimage-assets/founder300.jpg 300w, ./images/founderimage-assets/founder450.jpg 450w, ./images/founderimage-assets/founder600.jpg 600w">
-    </figure>
+       <div id="founderImage">
+        <picture>
+            <source media="(max-width: 300px)" srcset="./images/founderimage-assets/founder300.jpg">
+            <source media="(max-width: 450px)" srcset="./images/founderimage-assets/founder450.jpg">
+            <source media="(max-width: 600px)" srcset="./images/founderimage-assets/founder600.jpg">
+            <img src="./images/founderimage-assets/founder600.jpg" alt="our founder">
+        </picture>
+        <!-- <img  src="./images/founderimage-assets/founder600.jpg" alt="founder image" sizes="50vw" 
+            srcset="./images/founderimage-assets/founder300.jpg 300w, ./images/founderimage-assets/founder450.jpg 450w, ./images/founderimage-assets/founder600.jpg 600w"> -->
+        </div>
        <p>Nec, vut eu mid dictumst enim rhoncus non ac enim scelerisque amet
         dictumst porttitor,
         ultricies nisi pulvinar, dolor diam amet! Augue, etiam amet duis pulvinar

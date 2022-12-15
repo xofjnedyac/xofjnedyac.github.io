@@ -151,18 +151,18 @@ main h2 {
     width: 100%;
 }
 
-main figure {
-    margin: 6px 0px 12px 6px;
+#founderImage {
+    margin: 6px 6px 12px 6px;
 }
 
 
 #founderImage {
     float: right; 
-    max-width: 30rem;
+    max-width: 100%;
 }
 
 #founderImage img{
-    max-width: 30rem;
+    width: 100%;
 }
 
 
