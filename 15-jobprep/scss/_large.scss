@@ -1,0 +1,58 @@
+header, nav, main, footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+
+
+// Columns
+@for $i from 0 through 12 {
+    $w:($i/12)*100%;
+    .large-#{$i} {flex-basis: $w;}
+}
+
+
+header {
+}
+
+#mediumNav ul li:nth-child(3) {
+    padding-right: 0;
+}
+
+.addPaddingHero {
+    padding-left: .4rem;
+    padding-right: .4rem;
+}
+
+.addPadding {
+    padding-left: .4rem;
+    padding-right: .4rem;
+}
+
+main {
+
+    #features {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "infrastructure technology pricing"
+        "support support pricing";
+    }
+
+    .aboutCard, .textCard {
+        display: flex;
+        flex-direction: column;
+        padding: .4rem;
+
+    }
+    
+}
+
+#pricing img {
+    height: 370px !important;
+}
+
+#pricing {
+    padding: .4rem;
+}
+

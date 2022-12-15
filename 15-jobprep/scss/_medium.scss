@@ -1,0 +1,69 @@
+/* NAVIGATION STUFF GOES HERE  */
+
+// Columns 
+@for $i from 0 through 12 {
+    $w:($i/12)*100%;
+    .medium-#{$i} {flex-basis: $w;}
+}
+
+header img {
+    display: inline;
+    margin: auto;
+}
+
+#mediumNav ul {
+    justify-content: flex-end;
+}
+
+#mediumNav ul li {
+    display: flex;
+    height: 36px;
+    align-items: center;
+    padding: 10px;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    
+}
+
+#mediumNav ul li a {
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+    font-size: 20px; 
+    transition: color .3s ease;
+}
+
+
+#mediumNav ul li:hover a {
+    color: #000;
+}
+
+
+//main 
+
+
+
+#features {
+    grid-template-columns: 1fr 1fr 1fr !important;
+    grid-template-areas: 
+    "infrastructure technology pricing"
+    "support support pricing" !important;
+    margin-bottom: 4rem;
+}
+
+#pricing {
+    padding: .8rem;
+}
+
+#pricing img {
+    height: 400px;
+}
+
+.fullWidth ul {
+    display: block;
+    padding-left: 6rem;
+    padding-bottom: 3rem;
+}
+
+#formula {
+    text-align: right;
+}
