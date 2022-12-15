@@ -3,7 +3,6 @@ header, nav, main, footer {
     margin: auto;
 }
 
-/* NAVIGATION STUFF GOES HERE  */
 
 
 // Columns
@@ -13,10 +12,9 @@ header, nav, main, footer {
 }
 
 
-header {
-}
 
-#mediumNav ul li:nth-child(3) {
+
+#fullNav ul li:nth-child(3) {
     padding-right: 0;
 }
 
@@ -45,14 +43,17 @@ main {
         padding: .4rem;
 
     }
+
+    #pricing {
+        padding: .4rem;
+    
+        img {
+            height: 370px !important;
+        }
+    }
+    
     
 }
 
-#pricing img {
-    height: 370px !important;
-}
 
-#pricing {
-    padding: .4rem;
-}
 

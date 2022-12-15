@@ -11,36 +11,20 @@ header img {
     margin: auto;
 }
 
-#mediumNav ul {
-    justify-content: flex-end;
-}
+#fullNav {
+    ul {
+        justify-content: flex-end;
+    }
 
-#mediumNav ul li {
-    display: flex;
-    height: 36px;
-    align-items: center;
-    padding: 10px;
-    margin-top: .3rem;
-    margin-bottom: .3rem;
-    
-}
-
-#mediumNav ul li a {
-    color: rgb(156, 156, 156);
-    text-decoration: none;
-    font-size: 20px; 
-    transition: color .3s ease;
 }
 
 
-#mediumNav ul li:hover a {
-    color: #000;
-}
 
 
-//main 
 
 
+
+main{
 
 #features {
     grid-template-columns: 1fr 1fr 1fr !important;
@@ -54,16 +38,19 @@ header img {
     padding: .8rem;
 }
 
+#formula {
+    text-align: right;
+}
+
 #pricing img {
     height: 400px;
+}
+
+
 }
 
 .fullWidth ul {
     display: block;
     padding-left: 6rem;
     padding-bottom: 3rem;
-}
-
-#formula {
-    text-align: right;
 }
